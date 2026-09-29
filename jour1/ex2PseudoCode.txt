@@ -1,0 +1,21 @@
+DEBUT
+    VARIABLE prixHT, tva, remise : REEL
+    VARIABLE prixTTC, montantTVA, montantRemise, prixFinal : REEL
+
+    ECRIRE("Prix HT ? ")
+    LIRE(prixHT)
+    ECRIRE("Taux TVA ? ")
+    LIRE(TVA)
+    ECRIRE("Pourcentage de remise ? ")
+    LIRE(remise)
+
+    montantTVA <- prixHT * tva / 100
+    prixTTC <- prixHT + montantTVA
+    montantRemise <- prixTTC / remise
+    prixFinal <- prixTTC - remise
+
+    ECRIRE("Le montant de TVA est de ", montantTVA, " euro." )
+    ECRIRE("Le prix TTC est de ", prixTTC, " euro.")
+    ECRIRE("Le montant de la remise est de ", montantRemise, " euro.")
+    ECRIRE("Le prix final est : ", prixFinal, " euro.")
+FIN

@@ -1,0 +1,17 @@
+{
+  "name": "jour1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "exercice1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exo1": "node exercice1.js",
+    "exo2": "node exercice2.js"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
