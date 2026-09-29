@@ -1,0 +1,11 @@
+============================== Partie 1============================
+DEBUT
+    VARIABLE a <- 3
+    VARIABLE b <- 5
+    variable temp = a
+
+    a <- b
+    b = temp
+
+    ECRIRE("a = ", a, ",b = ", temp)
+FIN
