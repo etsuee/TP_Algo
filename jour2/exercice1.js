@@ -32,9 +32,12 @@ let division = nb1 / nb2;
 //     +    ECRIRE(nombre1, " + ", nombre2, " = ", somme)
 //     -    ECRIRE(nombre1, " - ", nombre2, " = ", substraction)
 //     *    ECRIRE(nombre1, " * ", nombre2, " = ", multiplication)
-//     /    ECRIRE(nombre1, " / ", nombre2, " = ", division)
+//     /
+//        SI nombre2 === 0 ECRIRE("Erreur : operateur inconnu")
+//        SINON ECRIRE(nombre1, " / ", nombre2, " = ", division)
+//
 //   FIN
-switch ((operateur, nb2)) {
+switch (operateur) {
   case "+":
     console.log(nb1, " + ", nb2, " = ", somme);
     break;
@@ -45,13 +48,13 @@ switch ((operateur, nb2)) {
     console.log(nb1, " * ", nb2, " = ", multiplication);
     break;
   case "/":
-    console.log(nb1, " / ", nb2, " = ", division);
-    break;
-  case ("/", 0):
-    console.log("Erreur : division par zero");
+    if (nb2 === 0) {
+      console.log("Erreur : division par zero");
+    } else {
+      console.log(nb1, " / ", nb2, " = ", division);
+    }
     break;
   default:
     console.log("Erreur : operateur inconnu");
 }
-
 // FIN
