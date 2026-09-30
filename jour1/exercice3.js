@@ -33,16 +33,18 @@ let b2 = 42;
 console.log("Avant : a = ", a2, " b = ", b2);
 
 a2 = b2 + a2;
-b2 = a2 - b2; // à corriger
+b2 = a2 - b2;
+a2 = a2 - b2;
 
 console.log("Après : a = ", a2, ", b = ", b2);
 
 // ============================== Partie 3 ============================
 console.log("Echange de variables : partie 3");
 
-let a3, b3;
+let a3 = 3;
+let b3 = 5;
 
-[a3, b3] = [-2, -3];
+[a3, b3] = [b3, a3];
 
 console.log("Avant : a = ", a3, ", b = ", b3);
 
