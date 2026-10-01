@@ -24,13 +24,13 @@ for (let i = 1; i <= n; i++) {
 
 console.log("============= Pyramide centrée ============= ");
 
-for (let i = 0; i < n; i++) {
+for (let i = 1; i <= n; i++) {
   let ligne = "";
-  for (let j = 1; j < n - i; j++) {
-    ligne = ligne + "  ";
+  for (let j = 1; j <= n - i; j++) {
+    ligne += "  ";
   }
-  for (let k = 1; k <= 2 * i + 1; k++) {
-    ligne = ligne + "* ";
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    ligne += "* ";
   }
   console.log(ligne);
 }
