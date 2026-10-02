@@ -1,0 +1,40 @@
+DEBUT
+  VARIABLE nombre1 : REEL
+  VARIABLE nombre2 : REEL
+  VARIABLE operateur : CHAINE
+
+  VARIABLE somme : REEL
+  VARIABLE substraction : REEL
+  VARIABLE multiplication : REEL
+  VARIABLE division : REEL
+
+  ECRIRE("Saisir le premier nombe")
+  LIRE(nombre1)
+  ECRIRE("Saisir un opérateur : + - * ou /")
+  LIRE(operateur)
+  ECRIRE("Saisir le deuxieme nombre")
+  LIRE(nombre2)
+  
+
+  somme <- nombre1 + nombre2
+  substraction <- nombre1 - nombre2
+  multiplication <- nombre1 * nombre2
+  division <- nombre1 / nombre2
+
+  SELON operateur FAIRe
+    CAS "+" :  
+      ECRIRE(nombre1, " + ", nombre2, " = ", somme)
+    CAS "-" :    
+      ECRIRE(nombre1, " - ", nombre2, " = ", substraction)
+    CAS "*" :  
+      ECRIRE(nombre1, " * ", nombre2, " = ", multiplication)
+    CAS "/" :
+      SI nombre2 = 0 ALORS
+        ECRIRE("Erreur : division par zero !")    
+      SINON
+        ECRIRE(nombre1, " / ", nombre2, " = ", division)
+      FIN SI
+    DEFAULT :
+      ECRIRE("Erreur : operateur inconnu)
+  FIN SELON
+FIN
