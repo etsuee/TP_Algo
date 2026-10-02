@@ -8,7 +8,7 @@ DEBUT
   VARIABLE multiplication : REEL
   VARIABLE division : REEL
 
-  ECRIRE("Saisir le premier nombe")
+  ECRIRE("Saisir le premier nombre")
   LIRE(nombre1)
   ECRIRE("Saisir un opérateur : + - * ou /")
   LIRE(operateur)
