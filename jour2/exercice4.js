@@ -10,9 +10,11 @@ function validerMotDePasse(pwd) {
   for (l of pwd) {
     if (l >= "A" && l <= "Z") {
       contientMajuscule = true;
-    } else if (l >= "a" && l <= "z") {
+    }
+    if (l >= "a" && l <= "z") {
       contientMinuscule = true;
-    } else if (l >= "0" && l <= "9") {
+    }
+    if (l >= "0" && l <= "9") {
       contientChiffre = true;
     }
   }
