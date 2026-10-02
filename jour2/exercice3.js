@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-n = parseFloat(prompt("Saisir un nombre : "));
+n = parseInt(prompt("Saisir un nombre : "));
 
 for (let i = 1; i <= n; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -12,4 +12,14 @@ for (let i = 1; i <= n; i++) {
   } else {
     console.log(i);
   }
+}
+
+for (let i = 1; i <= n; i++) {
+  let resultat = "";
+
+  if (i % 3 === 0) resultat += "Fizz";
+  if (i % 5 === 0) resultat += "Buzz";
+  if (i % 7 === 0) resultat += "Wazz";
+
+  console.log(resultat || i);
 }
